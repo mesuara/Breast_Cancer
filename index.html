@@ -91,7 +91,7 @@
                                 <span class='para'></span>
                             Wisconsin Diagnostic Breast Cancer dataset were applied to ML techniques for training.  There were 587 data points. The features of the cells in the dataset that were the following:(1)Radius,(2)perimeter,(3) permimeter, (4)area,(5)smoothness, (6) compactness, (7) concavity, (8) concave points, (9) symmetry, and (10) fractal dimension.
                             </p>
-
+                        <img class='images' src='images/columns.png'>
 
                     </div>
 
@@ -102,9 +102,51 @@
                             Support Vector Machine(SVM): <br>
                                 A SVM is a  supervised ML model that can perform linear or non linear classification. It is specifically constructed to minimize generalization errors. It separates the data based on finding the minimum distance of a hyperplane. This “decision boundary” is called the maximum margin hyperplane(MMH). SVMs also include single or hybrid models such as Proximal Support Vector Machine, Linear Programming Support Vector Machine to name a few. SVM are useful because they are effective high dimensional spaces, where the sample number is less than dimensions. It is also know be very memory efficient and versatile due to it’s ability of Kernel function specification. 
                                 </p>
+                                <img class='images' src='images/linear_separability_vs_not.png'>
+                    </div>
+
+                    <div id='modeltraining'>
+                        <h1>Model Training</h1>
+
+                        <p> <span class='para'></span>
+                            We used the diagnosis(“Y”) feature from the dataset to predict the output. The remaining columns in the dataset like mean radius, mean texture etc are considered predictors. After cleaning the data, we divided the data into subsets of training and testing.  The testing model as suggested will measure the performance of the algorithm. Train_test_split modules are imported from the Scikit learn library and we split the data into 20% for training and 80% for testing. Next using the same sklearn library, we import the Support Vector Machine(SVM) modules and fit our model. A confusion matrix(another module) is used to asses the accuracy of the prediction model.
+                        </p>
+                    </div>
+
+                    <div id='results'>
+                        <h1>Results</h1>
+                        <p>
+                            <span class='para'></span>
+                            From our original dataset we see that there were more Benign(357) tumors than Malignant. Without doing any data cleanup, correlation between different features of tumor cells was immediately observed in the heat map. The mean texture of the malignant cells were more distorted than benign ones. After training and testing the model and running it through our SVM algorithm, we can see that our model an excellent job with it’s predictions. It predicted that returned only false positive and rest of the data was reflected our prediction. The SVM model returned a 99% accuracy and 100% precision rate for malignant tumors.
+
+                        </p>
+                        <img class='images' src='images/heatmap.png'>
+
+                        <img class='images' src='images/countplot.png'>
+
+                        <img class='images' src='images/Swarm_plot.png'>
+
+
 
                     </div>
 
+                    <div id='conclusion'>
+                        <h1>Conclusion</h1>
+
+                        <p>
+                            <span class='para'></span>
+                            
+                            Through this project, SVM was tested as potential ML method for breast cancer detection. The results and prediction obtained were very promising. We propose that SVM could become a popular tool for detecting breast cancer. This model especially when combined with neural networks got help medical professional diagnose cancer more efficiently. All the ML techniques such as SVM should aid existing tests like mammograms and ultrasound to improve accuracy. Cancer genomic database is increasing ass the new sequencing technologies emerge. Machine Learning algorithms are perfectly suited to play a vital role analyzing these complex set of datas. New cancer targets for drugs can be developed with increasing more involvement of Machine Learning.
+
+
+                        </p>
+
+                        <img class='images' src='images/classification.png'>
+
+                        <img class='images' src='images/Heatmap2.png'>
+
+
+                    </div>
 
 
 

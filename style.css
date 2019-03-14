@@ -31,13 +31,40 @@ body{
 }
 
 #dataset{
-    padding: 40px 10px 10px 10px;
+    padding: 40px 5px 5px 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 #svm{
-    padding: 40px 10px 10px 10px;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 5px 5px 5px;
 }
 
+#modeltraining{
+    padding: 40px 5px 5px 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#results{
+    padding: 40px 5px 5px 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#conclusion{
+    padding: 40px 5px 5px 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 .ui.sidebar.menu .item {
     font-size: 20px;
     text-align: center;
@@ -53,4 +80,11 @@ h1 {
 
 .para{
     padding: 20px;
+}
+
+.images{
+    width: 90vh;
+    /* height:; */
+    align-self: center;
+    align-items: center;
 }
