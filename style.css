@@ -2,7 +2,9 @@ body{
     font-size: 20px;
     font-family: 'Courier New', Courier, monospace;
 }
-
+#ribbon{
+    width:30vh;
+}
 #mainContainer{
     padding: 60px;
     display: flex;
